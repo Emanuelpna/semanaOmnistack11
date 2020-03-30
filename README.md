@@ -11,4 +11,4 @@
 - [x] Dia 2 - Backend da aplicação
 - [x] Dia 3 - Frontend da aplicação
 - [x] Dia 4 - Mobile da aplicação
-- [ ] Dia 5 - Avançando a aplicação
+- [x] Dia 5 - Avançando a aplicação
