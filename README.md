@@ -3,7 +3,7 @@
 
 <h1 align="center" > :rocket: Be the Hero  :rocket: </h1>
 
-<p align="center">Projeto sendo criado durante a Semana Omnistack 11</p>
+<p align="center">Projeto criado durante a Semana Omnistack 11 realizada pela Rocketseat</p>
 
 ## :dart: Etapas restantes :dart: 
 

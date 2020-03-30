@@ -33,6 +33,7 @@ export const Logo = styled.img``;
 export const Title = styled.h1`
   margin: 4rem 0 2rem;
   font-size: 2rem;
+  color: #3c3c48;
 `;
 
 export const Text = styled.p`
@@ -46,6 +47,6 @@ export const Form = styled.form`
   max-width: 450px;
 
   & input, textarea {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 `;

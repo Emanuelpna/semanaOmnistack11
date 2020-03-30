@@ -17,7 +17,6 @@ const Profile = () => {
   useEffect(() => {
     const ongID = localStorage.getItem('ongId');
 
-    console.log('ongID :', ongID);
     if(!ongID) {
       alert("Faça logon para continuar acessando.")
       history.push("/");
@@ -28,9 +27,7 @@ const Profile = () => {
         headers: { Authorization: ongID }
       });
 
-      console.log('response.data :', response.data[0]);
-
-      setIncidents(response.data);
+      setIncidents(response.data.reverse());
     })();
   }, [history]);
 
@@ -82,14 +79,14 @@ const Profile = () => {
       <S.IncidentList>
         {incidents.map(({ id, title, description, value, ong_id }) => (
           <S.Incident key={id}>
-            <strong>Caso:</strong>
-            <p>{title}</p>
+            {/* <strong>Caso:</strong> */}
+            <strong>{title}</strong>
 
-            <strong>Descrição:</strong>
+            {/* <strong>Descrição:</strong> */}
             <p>{description}</p>
 
-            <strong>Valor:</strong>
-            <p>{formatPrice(value)}</p>
+            {/* <strong>Valor:</strong> */}
+            <span>{formatPrice(value)}</span>
 
             <S.TrashButton onClick={() => deleteIncident(id, ong_id)}>
               <S.TrashButtonIcon />

@@ -35,6 +35,7 @@ export const Logo = styled.img`
 export const Title = styled.h1`
   margin-top: 80px;
   margin-bottom: 24px;
+  color: #3c3c48;
 `;
 
 export const IncidentList = styled.ul`
@@ -49,22 +50,29 @@ export const Incident = styled.li`
   padding: 24px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 6px #69696d14;
+  box-shadow: 0 2px 6px #69696d26;
 
   & strong {
     display: block;
     margin-bottom: 16px;
-    color: #41414d;
+    color: #18181b;
+    font-size: 1.2rem;
   }
-  
-  & p + strong {
+
+  & span {
+    display: block;
     margin-top: 32px;
+    font-size: 1.4rem;
+    color: #e02041;
+    font-weight: bold;
   }
 
   & p {
+    max-width: 45ch;
     color: #737380;
-    line-height: 21px;
-    font-size: 16px;
+    margin-top: 12px;
+    line-height: 1.4rem;
+    font-size: 1rem;
     font-weight: 400;
   }
 `;
@@ -92,11 +100,14 @@ export const TrashButton = styled.button`
   position: absolute;
   right: 24px;
   top: 24px;
+  padding: 16px;
+  border-radius: 4px;
   border: 0;
   background: transparent;
   transition: 150ms ease-in-out;
 
   &:hover {
+    background: #d4d4de87;
     opacity: 0.8;
   }
 `;
